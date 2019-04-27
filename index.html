@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="stayl/style.css">
+	<script src="../7 урок/jquery-3.3.1.min.js">	</script>
+</head>
+<body>
+	<div class="flags-container flex justify-center">
+
+		<img class="lenguage-image active" src="img/ukraina.jpg" data-lang="ua" >
+
+		<img class="lenguage-image" src="img/english.jpg" data-lang="en">
+
+	</div>
+	<form action="">
+
+		<p id="name">
+			<span class="description">Ваше имя:</span>
+			<input type="text" placeholder="Введите ваше имя" >
+		</p>
+
+		<p id="gender">
+			<span class="description">Ваш пол:</span>
+			<span id="male">M</span><input type="radio" name="gender" value="male">
+			<span id="female">Ж</span><input type="radio" name="gender" value="female">
+		</p>
+
+		<p id="country_wrapper">
+			<span class="description">Выберите страну прожывания:</span>
+			<select id="country">
+   			<option value="en">Англия</option>
+  			<option value="ua">Украина</option>
+  			<option value="ru">Россия</option>
+  			<option value="us">CША</option>
+			</select>
+			</p>
+
+			<p id="isShowBornContry">
+				<span class="description">Cтрану прожывания и страна где вы радились равны?</span>
+				<input type="checkbox">
+			</p>
+
+			<p id="born-country_wrapper">
+				<span class="description">Выберите страну где вы радились:</span>
+			<select id="born-country">
+   			<option value="an">Англия</option>
+  			<option value="ua">Украина</option>
+  			<option value="ru">Россия</option>
+  			<option value="us">CША</option>
+			</select>
+			</p>
+
+			<p id="email">
+				<span class="description">Ваш email:</span>
+				<input type="text" placeholder="Введите email" >
+			</p>
+
+			<input type="submit" id="go" value="Отправеть">		
+		
+	</form>
+	<script src="JS/JS.JS"></script>
+</body>
+</html>  
